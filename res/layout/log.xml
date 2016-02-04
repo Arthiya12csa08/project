@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/hp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kite.MainActivity$PlaceholderFragment" >
+<EditText
+        android:id="@+id/un"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text" 
+        android:hint="@string/RegisterNo" />
+
+    <TextView
+        android:id="@+id/pwd"
+        style="@style/font1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/user"
+        android:layout_below="@+id/un"
+        android:layout_marginTop="28dp"
+        android:text="@string/Password"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/user"
+        style="@style/font1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/UserName"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/pd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="#460319"
+        android:text="@string/Submit"
+        android:textColor="#fff"
+        android:textSize="19sp"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/pd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pwd"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+</RelativeLayout>
